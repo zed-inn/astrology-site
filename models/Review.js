@@ -4,6 +4,8 @@ const ReviewSchema = new mongoose.Schema({
   name: String,
   rating: Number, // 1 to 5
   comment: String,
+  at: { type: Number, default: Date.now() },
+  courseTaken: String,
   approved: { type: Boolean, default: false },
 });
 
